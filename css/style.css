@@ -9,7 +9,7 @@ body{
 
 header{
     background-color: black;
-    background-image: linear-gradient(black, rgb(48, 47, 47));
+    background-image: linear-gradient(rgb(14, 14, 14), rgb(59, 59, 59));
     color: white;
     padding: 35px 0 35px 0;
 
@@ -18,10 +18,6 @@ header{
 .titleHeader{
     margin: 0px auto;
     width: 800px;
-}
-
-.welcomeSect{
-    border-bottom: 1px rgb(71, 71, 71) solid;
 }
 
 main{
@@ -37,19 +33,83 @@ main{
     padding-bottom: 35px;
 }
 
-
-.introSect, .skillSect, .projectsSect, .contactSect{
+.container p{
     padding: 15px 0 15px 0;
 }
 
 
+
+.introSect, .skillSect, .projectsSect, .contactSect{
+    padding: 15px 0 15px 0; 
+/*    padding: 15px;
+    margin: 35px 0 35px 0;
+    border: 1px black solid;
+    box-shadow: 5px 10px 8px #888888;
+        */
+}
+
+.skillListSect{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px black solid;
+    box-shadow: 5px 8px 5px #888888;
+    background-color: white;
+    padding: 20px;
+
+}
+
+.skillListSect ul li{
+    padding: 5px 0 5px 0;
+}
+
+.welcomeTitleSect{
+    border-bottom: 1px rgb(71, 71, 71) solid;
+}
+
 footer{
 
     background-color: black;
-    background-image: linear-gradient(black, rgb(48, 47, 47));
+    background-image: linear-gradient(rgb(14, 14, 14), rgb(59, 59, 59));
     color: white;
     padding: 35px 0 35px 0;
 }
+
+
+/*****   Contact Form    **********/
+
+.formgridmain{
+    color: black;
+    display: grid;
+    background-color:lightcyan;
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.fieldWrapper{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+    padding: 8px;
+}
+
+.fieldSubmit{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.inButton{
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/********* Contact Form End **********/
 
 .footText{
     margin: 0px auto;
