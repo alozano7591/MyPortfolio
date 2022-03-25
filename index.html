@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="java/rocket.js"></script>
     <title>My Portfolio</title>
 </head>
-<body>
+<body onload="ActivateActivators()">
     
     <header>
         <div class="titleHeader">
@@ -47,22 +48,39 @@
                         <h3>Software Skills</h3>
                         <ul>
                             <li>Visual Studio and Visual Studio Code</li>
-                            <li>Microsoft Access</li>
                             <li>Unity3D Engine</li>
                             <li>JustInMind</li>
+                            <li>Microsoft Access</li>
                             <li>Adobe Premier Pro</li>
                             <li>Microsoft Word, Excel, Powerpoint</li>
                         </ul>
                     </div>
                     
                 </div>
-                
 
             </section>
 
             <section class="projectsSect">
                 <h2>This is where all my projects go</h2>
                 <p>I've done a few projects and feel very proud of myself</p>
+
+                <div class="webRocketProject">
+
+                <h2>Web Foundations - Animated Rocket</h2>
+                    <section class="rocketSect">
+                        <div class="launchArea">
+                            
+                            <h3 id="countDownText">10</h3>
+                            <!-- This image was made in illustrator by myself, Alfredo Lozano -->
+                            <img src="images/MySimpeRocket.png" id="rocketPiece" width="50" height="50" >
+                        </div>
+                    </section>
+                    <section class=buttonSect>
+                        <input type="button" class="rocketButton" value="LAUNCH" onclick="StartCountDown()">
+                    </section>
+                </div>
+                
+
             </section>
 
             <section class="contactSect">
@@ -123,7 +141,6 @@
                 </form>
 
             </section>
-
 
         </section>
 
