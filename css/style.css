@@ -73,6 +73,53 @@ footer{
     padding: 35px 0 35px 0;
 }
 
+.videoWrapper{
+    position: relative;
+    padding: 0 0 56.25% 0;
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/***** RocketProject Section **********/
+
+#countDownText{
+    font-size: 35px;
+}
+
+#rocketPiece{
+    width:  50px;
+    height: 50px;
+    position: absolute;
+}
+
+.rocketSect{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: azure;
+
+}
+
+.buttonSect{
+    height: 100px;
+    text-align: center;
+}
+
+.rocketButton{
+    font-size: 35px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+/***** END RocketProject Section **********/
 
 /*****   Contact Form    **********/
 
@@ -117,41 +164,6 @@ footer{
 
 
 
-/***** RocketProject Section **********/
-
-#countDownText{
-    font-size: 35px;
-}
-
-#rocketPiece{
-    width:  50px;
-    height: 50px;
-    position: absolute;
-}
-
-.rocketSect{
-    height: 400px;
-    width: 400px;
-    position: relative;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: azure;
-
-}
-
-.buttonSect{
-    height: 100px;
-    text-align: center;
-}
-
-.rocketButton{
-    font-size: 35px;
-    background-color: aliceblue;
-    cursor: pointer;
-}
 
 
 
-/***** END RocketProject Section **********/
