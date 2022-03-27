@@ -100,17 +100,17 @@
                 <h2>Contact Me!</h2>
                 <p>Interested in hearing more? Have Questions? Looking for a programmer to hire? Message me!</p>
 
-                <form action="/checkout" method="POST" class="formgridmain">
+                <form action="mailto:alozano7591@conestogac.on.ca" method="POST" enctype="text/plain" class="formgridmain">
                 <fieldset>
                     <legend>Please Enter Your Details</legend>
                     <!-- i. Two text input fields with labels, one for a name and one for an email address -->    
                     <div class="fieldWrapper"> 
-                        <label for="uname">Name: </label>
-                        <input type="text" id="uname" name="uname" placeholder="First Last" required minlength="10" pattern="[a-zA-Z0-9]+\s[a-zA-Z0-9]+">
+                        <label for="uname">Name*: </label>
+                        <input type="text" id="uname" name="uname" placeholder="First Last" required minlength="8" pattern="[a-zA-Z0-9]+\s[a-zA-Z0-9]+">
                     </div>
                     <div class="fieldWrapper">
-                        <label for="uemail">Email: </label>
-                        <input type="email" id="uemail" name="uemail" placeholder="example@email.com">
+                        <label for="uemail">Email*: </label>
+                        <input type="email" id="uemail" name="uemail" placeholder="example@email.com" required minlength="3" pattern="[/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/]">
                     </div>
                 </fieldset>
 
@@ -120,28 +120,30 @@
                         <!-- ii. A dropdown list with at least two option groups and three options in each -->
                         <select id="udropdown" name="udropdown">
                             <option value="WhoAreYou">Chose What Best Categorizes Who You are</option>
-                            <optgroup label="Student">                            
-                                <option value="Programming">Programming</option>
-                                <option value="Programming and Analysis">Programming and Analysis</option>
+                            <optgroup label="Looking To Hire">
+                                <option value="Tech">Tech</option>
+                                <option value="Government">Government</option>
+                                <option value="Game Dev">Game Dev</option>
                                 <option value="Other">Other</option>
                             </optgroup>
                             <optgroup label="Teacher">
+                                <option value="Networking">Networking</option>
                                 <option value="Math">Math</option>
                                 <option value="Web Foundations">Web Foundations</option>
                                 <option value="Programming Concepts">Programming Concepts</option>
                             </optgroup>
-                            <optgroup label="Investor">
-                                <option value="TechInvestor">Tech Investor</option>
-                                <option value="Ecologist">Ecologist</option>
-                                <option value="Elon Musk">Elon Musk</option>
+                            <optgroup label="Other">                            
+                                <option value="Student">Student</option>
+                                <option value="Hobbyist">Hobbyist</option>
+                                <option value="Other">Other</option>
                             </optgroup>
                         </select>
                     </div>
                     
                     <!-- iv. A Text Area input field, with at least 7 rows and 50 columns -->
                     <div class="fieldWrapper">
-                        <label for="umessage">Feedback</label>
-                        <textarea name="umessage" id="umessage" cols="50" rows="7" placeholder="Please let us know what you think here..."></textarea>
+                        <label for="umessage">Message*</label>
+                        <textarea name="umessage" id="umessage" cols="50" rows="7" required minlength="3" placeholder="Tell me something..."></textarea>
                     </div>
 
                 </fieldset>
@@ -152,11 +154,8 @@
                         <input class="inButton" type="submit" value="Submit">
                     </div>
                 </form>
-
             </section>
-
         </section>
-
     </main>
 
     <footer>
