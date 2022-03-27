@@ -52,6 +52,7 @@ p{
 
 .introSect, .skillSect, .projectsSect, .contactSect{
     padding: 25px 0 25px 0; 
+    width: 100%;
 }
 
 
@@ -174,7 +175,65 @@ iframe{
     width: 800px;
 }
 
+@media only screen and (max-width: 600px) {
 
+    .titleHeader{
+        margin: 0px auto;
+        width: 100%;
+    }
+    
+    main{
+        width: 100%;
+        margin: 0px auto;
+        /*border: 1px solid black;  */
+        border-top: 0px;
+    }
+    
+    footer{
+
+        background-color: black;
+        background-image: linear-gradient(rgb(14, 14, 14), rgb(59, 59, 59));
+        color: white;
+        padding: 35px 0 35px 0;
+    }
+
+    .footText{
+        width: 100%;
+    }
+
+    .formgridmain{
+        color: black;
+        display: grid;
+        background-color:lightcyan;
+        grid-template-columns: 1fr;
+        grid-gap: 12px;
+        width: 100%;
+        margin: 0 auto;
+        border: 2px solid black;
+        border-radius: 8px;
+        padding: 25px 0 25px 0;
+    }
+
+    .fieldWrapper{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 5fr;
+        grid-gap: 10px;
+        padding: 8px 0 8px 0;
+    }
+    
+    .fieldSubmit{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+    .inButton{
+        padding: 10px;
+        cursor: pointer;
+    }
+
+}
 
 
 
