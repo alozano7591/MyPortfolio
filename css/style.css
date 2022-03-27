@@ -3,6 +3,14 @@
 
 }
 
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 25px;
+}
+
 body{
     width: 100%;
     background-color: whitesmoke;
@@ -42,10 +50,10 @@ p{
 }
 
 
-
 .introSect, .skillSect, .projectsSect, .contactSect{
-    padding: 15px 0 15px 0; 
+    padding: 25px 0 25px 0; 
 }
+
 
 .skillListSect{
     display: grid;
@@ -54,7 +62,6 @@ p{
     box-shadow: 5px 8px 5px #888888;
     background-color: white;
     padding: 20px;
-
 }
 
 .skillListSect ul li{
@@ -71,6 +78,10 @@ footer{
     background-image: linear-gradient(rgb(14, 14, 14), rgb(59, 59, 59));
     color: white;
     padding: 35px 0 35px 0;
+}
+
+.prog1815-Ass3, .webRocketProject{
+    padding: 18px 0 18px 0;
 }
 
 .videoWrapper{
@@ -109,8 +120,9 @@ iframe{
 }
 
 .buttonSect{
-    height: 100px;
     text-align: center;
+    margin-bottom: 0;
+    padding-top: 0;
 }
 
 .rocketButton{
