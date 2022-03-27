@@ -3,8 +3,12 @@
 
 }
 
+h1{
+    font-size: 40px;
+}
+
 h2{
-    font-size: 32px;
+    font-size: 36px;
 }
 
 h3{
@@ -32,8 +36,7 @@ header{
 main{
     width: 800px;
     margin: 0px auto;
-    /*border: 1px solid black;  */
-    border-top: 0px;
+
 }
 
 p{
@@ -43,6 +46,7 @@ p{
 .container{
     margin-top: 35px;
     padding-bottom: 35px;
+    width: 100%;
 }
 
 .container p{
@@ -53,16 +57,18 @@ p{
 .introSect, .skillSect, .projectsSect, .contactSect{
     padding: 25px 0 25px 0; 
     width: 100%;
+    text-align: center;
 }
 
 
 .skillListSect{
+    text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 1px black solid;
     box-shadow: 5px 8px 5px #888888;
     background-color: white;
-    padding: 20px;
+    padding: 20px 0px 20px 60px;
 }
 
 .skillListSect ul li{
@@ -74,7 +80,6 @@ p{
 }
 
 footer{
-
     background-color: black;
     background-image: linear-gradient(rgb(14, 14, 14), rgb(59, 59, 59));
     color: white;
@@ -135,14 +140,14 @@ iframe{
 /***** END RocketProject Section **********/
 
 /*****   Contact Form    **********/
-
 .formgridmain{
+    text-align: justify;
+    width: 100%;
     color: black;
     display: grid;
     background-color:lightcyan;
     grid-template-columns: 1fr;
     grid-gap: 12px;
-    width: 100%;
     margin: 0 auto;
     border: 2px solid black;
     border-radius: 8px;
@@ -156,6 +161,10 @@ iframe{
     padding: 8px;
 }
 
+#umessage{
+    resize: none;
+}
+
 .fieldSubmit{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -166,8 +175,6 @@ iframe{
     padding: 10px;
     cursor: pointer;
 }
-
-
 /********* Contact Form End **********/
 
 .footText{
@@ -177,41 +184,31 @@ iframe{
 
 @media only screen and (max-width: 600px) {
 
-    .titleHeader{
-        margin: 0px auto;
+    .titleHeader, main, .footText{
         width: 100%;
-    }
-    
-    main{
-        width: 100%;
-        margin: 0px auto;
-        /*border: 1px solid black;  */
-        border-top: 0px;
-    }
-    
-    footer{
+    } 
 
-        background-color: black;
-        background-image: linear-gradient(rgb(14, 14, 14), rgb(59, 59, 59));
-        color: white;
-        padding: 35px 0 35px 0;
+    .skillListSect{
+        padding: 20px;
     }
 
-    .footText{
-        width: 100%;
-    }
-
+    /*****   Contact Form    **********/
     .formgridmain{
+        width: 88%;
         color: black;
         display: grid;
         background-color:lightcyan;
         grid-template-columns: 1fr;
         grid-gap: 12px;
-        width: 100%;
         margin: 0 auto;
         border: 2px solid black;
         border-radius: 8px;
-        padding: 25px 0 25px 0;
+        padding: 25px 15px;
+    }
+
+    .formClass{
+        width: 100%;
+        
     }
 
     .fieldWrapper{
@@ -219,20 +216,22 @@ iframe{
         width: 100%;
         grid-template-columns: 1fr 5fr;
         grid-gap: 10px;
-        padding: 8px 0 8px 0;
+        padding: 8px 0;
     }
     
     .fieldSubmit{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
+        padding: 20px 0 5px 0;
     }
-    
+
     .inButton{
-        padding: 10px;
+        padding: 10px 0;
         cursor: pointer;
     }
 
+    /********* Contact Form End **********/
 }
 
 
