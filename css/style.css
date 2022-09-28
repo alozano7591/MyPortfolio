@@ -104,9 +104,11 @@ iframe{
 
 /***** LegalLab Section **********/
 
-.legalLab img{
+.legalLab a img{
     width: 100%;
 }
+
+
 
 /***** LegalLab Section **********/
 
