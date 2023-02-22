@@ -4,203 +4,313 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="java/rocket.js"></script>
+    
     <title>My Portfolio</title>
 </head>
 <body onload="ActivateActivators()">
     
+    <!-- Thinking of having header, but making it disappear when the user scrolls down enough -->
+    <!-- 
     <header>
         <div class="titleHeader">
             <h1>Alfredo Lozano</h1>
             <h1>-Programmer</h1>
         </div>
     </header>
+    -->
+
+    <nav>
+        <ul>
+            <li><a href="#introSect"> Top</a></li>
+            <li><a href="#workSect"> Work</a></li>
+            <li><a href="#projectsSect"> Projects</a></li>
+            <li><a href="#contactSect"> Contact</a></li>
+            <!--
+            <li>
+                <a href="video.html"> Work</a>
+                <ul>
+                    <li><a href="feedback.html"> Portfolio</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=C19ap2M7DDE"> Contact</a></li>
+                </ul>
+            </li>
+            -->
+        </ul>
+    </nav>
 
     <main>
+        <!-- Going to aim to make header that is fixed to the top, 
+        and have links that scroll to the page area when clicked -->
         <section class="container">
-            <section class="introSect">
-                <div class="welcomeTitleSect">
-                    <h2>Hello Everyone!</h2>
-                </div>
+            
+            <section class="introSect" id="introSect">
+
                 
-                <p>Welcome to my portfolio. I am a very energetic and motivated individual with a strong passion for programming. I love learning new tricks and finding solutions to all sorts of challenges.</p>
+                <img src="images/programing-background.jpg" alt="space-background"> 
+
+                    <div class="introTextContainer">
+                        <!--   -->
+
+                        <div class="introtext">
+    
+                            <h2>Hi, I'm Alfredo!</h2>
+                            <p>I am a very energetic and motivated individual with a strong passion for programming. I love learning new tricks and finding solutions to all sorts of challenges.</p>
+                        
+                            <a class="learnButton" href="https://github.com/alozano7591">Check Out My GitHub!</a>
+                        </div>
+                       
+                    </div>
+                
             </section>
             
-            <section class="skillSect">
-                <h2>Skills</h2>
-                <p>I have a wide range of skills and am always expirementing with new tools and languages, and am never shy of trying something new. These are just the main highlights of my qualifications.</p>
-                
-                <div class="skillListSect">
-                    <div class="programListSect">
-                        <h3>Programmiong Languages</h3>
-                        <ul>
-                            <li>C#</li>
-                            <li>Java </li>
-                            <li>HTML</li>
-                            <li>Javascript</li>
-                            <li>CSS</li>
-                            <li>Visual Basic</li>
-                        </ul>
+            <section class="skillSect" id="skillSect">
+                <div class="content">
+                    <div class="sectionTitle">
+                        <h2>Skills</h2>
                     </div>
                     
-                    <div class="skillHLSect">
-                        <h3>Software Skills</h3>
-                        <ul>
-                            <li>Visual Studio and Visual Studio Code</li>
-                            <li>Unity3D Engine</li>
-                            <li>JustInMind</li>
-                            <li>Microsoft Access</li>
-                            <li>Adobe Premier Pro</li>
-                            <li>SQL Server Management Studio</li>
-                            <li>Cisco Packet Tracer</li>
-                            <li>Microsoft Word, Excel, Powerpoint</li>
-                        </ul>
+                    <p>I have a wide range of skills and am always expirementing with new tools and languages, and am never shy of 
+                        trying something new. These are just the main highlights of my qualifications.</p>
+                    
+                    <div class="skillListSect">
+                        <div class="skillLangList">
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>C#</li>
+                                <li>Java</li>
+                                <li>HTML</li>
+                                <li>Javascript</li>
+                                <li>CSS</li>
+                                <li>SQL</li>
+                                <li>Visual Basic</li>
+                            </ul>
+                        </div>
+
+                        
+                        <!-- I want to add a highlights section to talk more about the frameworks I worked on and achievements  had
+                            
+                            <div class="skillHLList">
+                            <h3>Highlights</h3>
+                            <ul>
+                                <li>Microsoft Web (SQL, MVC, .Net)</li>
+                                <li>Java Web (Node JS, MongoDB)</li>
+                                <li>Database Design</li>
+                                <li>Game Programming</li>
+                                <li>Network Programming</li>
+                                    <ul>
+                                        <li>replication</li>
+                                        <li>lag compensation</li>
+                                        <li>UDP and TCP usages</li>
+                                    </ul>
+                                <li>High Academic Achievements</li>
+                                    <ul>
+                                        <li>Earned work placement</li>
+                                        <li>Recommended for Student awards by Two Professors</li>
+                                    </ul>
+                                <li>Mobile Development experience</li>
+                            </ul>
+                        </div> -->
+                        
+                        <div class="skillSoftwareList">
+                            <h3>Software</h3>
+                            <ul>
+                                <li>Visual Studio and Visual Studio Code</li>
+                                <li>Unity3D Engine</li>
+                                <li>SQL Server Management Studio</li>
+                                <li>WebStorm</li>
+                                <li>Rider</li>
+                                <li>Netbeans</li>
+                                <li>Microsoft Access</li>
+                                <li>Adobe Premier Pro</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <br>
-            </section>
-
-            <section class="workSect">
-                <h2>Work Experience</h2>
-
-                <br>
-
-                <div class="legalLab">
-                    <h3>Contract Web Developer - LegalLab</h3>
-                    <p>The LegalLab website is a site owned by the Jennifer Labrecque Professional Corporation law firm. They have started a new marketing strategy that required their old site to be replaced. Their old site was created using a web building tool that left them with limitations, so I was contracted with creating a new site from scratch for them that would be easier to customize and add more features to.</p>
-                    <p>My first step involved making a plan with the client on what design changes they wanted and the funtionality needed. We decided to create the brand new site based on the old look and template, and then iterate from there to create a brand new site. For the first step, I created a desktop demo site with the new changes they wanted, this allowed them to review and provide further feedback. We are now in the process of adding reactive formatting for mobile and many more features.</p>
-
-                    <a href="https://alozano7591.github.io/LegalLabDemo/index.html"> 
-                        <img src="images/LegalLab-Coffee.png" alt="LegalLab">
-                    </a>
-                </div>
-
-            </section>
-
-            <section class="projectsSect">
-                <h2>Projects</h2>
-                <p>The following are various projects that I worked on during my first two semesters at school.</p>
-                <br>
-
-                <div class="unityGame">
-
-                    <h3>Unity3D - BombDodger</h3>
-                    <p>BombDodger is a 3D game made with the Unity3D game engine. This game is a networked multiplayer arena party game that has up to four players dodge bombs and minions in an attempt to be the last player standing.</p>
-
-                    <div class="unityGameDetails">
-                        <p> My work on this project invovled:</p>
-                        <ul>
-                            <li>All of the game programming (C#)</li>
-                            <li>Programming of network features (i.e. player interpolation, synced player data, synced game states)</li>
-                            <li>Programming of AI (minions and bombs to chase players)</li>
-                            <li>UI design and implementation</li>
-                            <li>Shader creation and implementation using ShaderGraph</li>
-                        </ul>
-                    </div>
-
                     <br>
-                    
-                    <a href="https://alozano7591.github.io/HideNGoBoomGame/"> 
-                        <img src="images/HideAndBoom-Title.JPG" alt="BombDodger">
-                    </a>
-
                 </div>
+                
+            </section>
 
-                <div class="prog1815-Ass3">
-                    <h3>Programming Concepts (C#) - Patient Database Form</h3>
-                    <p>In this project I programmed a basic form that manages patient medical data. The idea is that each visit to a medical center would need to be recorded and stored for later reference. In this case the encounter notes are accessed and stored via a text file. Some of the key aspects that I programmed into this were sorting via delimiters, object creation and manipulation, and file management. For more details, please feel free to watch the following video.</p>
-
-                        <div class="videoWrapper">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pZ6j5tegc2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-                        </div>
-                        
-                </div>
-
-                <div class="webRocketProject">
-
-                <h3>Web Foundations - Animated Rocket</h3>
-                <p>This is a basic assignment I did for my second semester web foundations class that implements some basic JavaScript animations. When the launch button is pressed interval functions are activated, starting a countdown, and then sending the rocket flying upward once the countdown is complete.</p>
-
-                    <section class="rocketSect">
-                        
-                        <div class="launchArea">
-                            
-                            <h3 id="countDownText">10</h3>
-                            <!-- This image was made in illustrator by myself, Alfredo Lozano -->
-                            <img src="images/MySimpeRocket.png" id="rocketPiece" width="50" height="50" >
-                        </div>
-                    </section>
+            <section class="workSect" id="workSect">
+                
+                <div class="content">
+                    <div class="sectionTitle">
+                        <h2>Recent Work Experience</h2>
+                    </div>
                     
-                    <div class=buttonSect>
-                        <input type="button" class="rocketButton" value="LAUNCH" onclick="StartCountDown()">
+
+                    <div class="legalLab">
+                        <h3>Contract Web Developer - LegalLab</h3>
+                        <p>The LegalLab website is a site owned by the Jennifer Labrecque Professional Corporation law firm. 
+                            I was contracted with creating a new website for a recent marketing campaign. The site was programmed 
+                            with responsive features and contains details on the company's new services and team members. 
+                            Development still currently in progress.</p>
+    
+                        <a href="https://alozano7591.github.io/LegalLabDemo/index.html"> 
+                            <img src="images/LegalLab-Coffee.png" alt="LegalLab">
+                        </a>
                     </div>
                 </div>
 
-                
-                
-                
+            </section>
+
+            <section class="projectsSect" id="projectsSect">
+                <div class="content">
+                    <div class="sectionTitle">
+                        <h2>Some of My Projects</h2>
+                    </div>
+    
+                    <div class="slideshow-container">
+                    
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 3</div>
+                          <div class="slideImage">
+                            <img src="images/HideAndBoom-Title.JPG" style="width:100%">
+                          </div>
+                          
+                          <div class="text">HideAndBoom: Unity3D-C#</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 3</div>
+                          <div class="slideImage">
+                            <img src="images/LegalLab-Coffee.png" style="width:100%">
+                          </div>
+                          
+                          <div class="text">Legal Lab: HTML, CSS, JS</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 3</div>
+                          <div class="slideImage">
+                            <img src="images/MonoGameProgramming.jpg" style="width:100%">
+                          </div>
+                          
+                          <div class="text">Game Programming Final Project: MonoGame - C#</div>
+                        </div>
+                        
+                    </div>
+                        <br>
+                        
+                    <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                    </div>
+        
+                    <!-- End of slide show -->
+    
+                    <div class="projectItem">
+    
+                        <!-- unityGame -->
+                        <h3>Unity3D - BombDodger</h3>
+                        <p>BombDodger is a 3D game made with the Unity3D game engine. This game is a networked multiplayer arena party game that has up to four players dodge bombs and minions in an attempt to be the last player standing.</p>
+    
+                        <div class="unityGameDetails">
+                            <p> My work on this project involved:</p>
+                            <ul>
+                                <li>All of the game programming (C#)</li>
+                                <li>Programming of network features (i.e. player replication, synced player data, lag compensation)</li>
+                                <li>Programming of AI (minions and bombs to chase players)</li>
+                                <li>UI design and implementation</li>
+                                <li>Shader creation and implementation using ShaderGraph</li>
+                            </ul>
+                        </div>
+    
+                        <br>
+                        
+                        <a href="https://alozano7591.github.io/HideNGoBoomGame/"> 
+                            <img src="images/HideAndBoom-Title.JPG" alt="BombDodger">
+                        </a>
+    
+                    </div>
+    
+                    <div class="projectItem">
+                        <!-- "prog1815-Ass3" -->
+                        <h3>Programming Concepts (C#) - Patient Database Form</h3>
+                        <p>In this project I programmed a basic form that manages patient medical data. The idea is that each visit to a medical center would need to be recorded and stored for later reference. In this case the encounter notes are accessed and stored via a text file. Some of the key aspects that I programmed into this were sorting via delimiters, object creation and manipulation, and file management. For more details, please feel free to watch the following video.</p>
+    
+                            <div class="videoWrapper">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pZ6j5tegc2w" title="YouTube video player" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                            </div>
+                            
+                    </div>
+
+                    <!--   Originally had my rocket here, but decided to put it somewhere else to be a little more creative with it
+                    <div class="webRocketProject">
+                    
+                    <h3>Web Foundations - Animated Rocket</h3>
+                    <p>This is a basic assignment I did for my second semester web foundations class that implements some basic JavaScript animations. When the launch button is pressed interval functions are activated, starting a countdown, and then sending the rocket flying upward once the countdown is complete.</p>
+    
+                    
+                        <section class="rocketSect">
+                            
+                            <div class="launchArea" id="launchArea">
+                                
+                                <h3 id="countDownText">PREP!</h3>
+                                <img src="images/MySimpeRocket.png" id="rocketPiece" width="50" height="50" >
+                            </div>
+                        </section>
+                        
+                        <div class=buttonSect>
+                            <input type="button" class="rocketButton" value="LAUNCH" onclick="StartCountDown()">
+                        </div> 
+                    -->
+                    </div>
+                </div>
 
             </section>
 
-            <section class="contactSect">
-                <h2>Contact Me!</h2>
-                <p>Interested in hearing more? Have Questions? Looking for a programmer to hire? Message me!</p>
-                
-                <form action="mailto:alozano7591@conestogac.on.ca" method="POST" enctype="text/plain" class="formgridmain">
-                    <div class="formClass">
-                        <fieldset>
-                            <legend>Please Enter Your Details</legend>
-                            <!-- i. Two text input fields with labels, one for a name and one for an email address -->    
-                            <div class="fieldWrapper"> 
-                                <label for="uname">Name*: </label>
-                                <input type="text" id="uname" name="uname" placeholder="First Last" required minlength="8" pattern="[a-zA-Z0-9]+\s[a-zA-Z0-9]+">
-                            </div>
-                            <div class="fieldWrapper">
-                                <label for="uemail">Email*: </label>
-                                <input type="email" id="uemail" name="uemail" placeholder="example@email.com" required minlength="3" pattern="[/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/]">
-                            </div>
+            <section class="contactSect" id="contactSect">
+                <div class="content">
 
-                            
-                            <div class="fieldWrapper2">
-                                <select id="udropdown" name="udropdown">
-                                    <option value="WhoAreYou">Chose What Best Categorizes Who You are</option>
-                                    <optgroup label="Looking To Hire">
-                                        <option value="Tech">Tech</option>
-                                        <option value="Government">Government</option>
-                                        <option value="Game Dev">Game Dev</option>
-                                        <option value="Other">Other</option>
-                                    </optgroup>
-                                    <optgroup label="Teacher">
-                                        <option value="Networking">Networking</option>
-                                        <option value="Math">Math</option>
-                                        <option value="Web Foundations">Web Foundations</option>
-                                        <option value="Programming Concepts">Programming Concepts</option>
-                                    </optgroup>
-                                    <optgroup label="Other">                            
-                                        <option value="Student">Student</option>
-                                        <option value="Hobbyist">Hobbyist</option>
-                                        <option value="Other">Other</option>
-                                    </optgroup>
-                                </select>
+                    <div class="sectionTitle">
+                        <h2>Contact Me!</h2>
+                    </div>
+                    
+                    <p>Have Questions? Looking for a programmer to hire? Message me!</p>
+                    
+                    <div id="fullRocketSect">
+                        <section class="rocketSect">
+                            <div class="launchArea" id="launchArea">
+                                
+                                <h3 id="countDownText">PREP!</h3>
+                                <!-- This image was made in illustrator by myself, Alfredo Lozano -->
+                                <img src="images/MySimpeRocket.png" id="rocketPiece" width="50" height="50" >
                             </div>
+                        </section>
                         
-                            
-                            <!-- iv. A Text Area input field, with at least 7 rows and 50 columns -->
-                            <div class="fieldWrapper">
-                                <label for="umessage">Message*</label>
-                                <textarea name="umessage" id="umessage"  rows="7" required minlength="3" placeholder="Tell me something..."></textarea>
-                            </div>
-
-                        </fieldset>
-            
-                        <!-- v. A reset button that will clear the form of all input -->
-                        <div class="fieldSubmit">
-                            <input class="inButton" type="reset" value="Clear Form">
-                            <input class="inButton" type="submit" value="Send">
+                        <div class=buttonSect>
+                            <input type="button" class="rocketButton" value="LAUNCH FORM" onclick="StartCountDown()">
                         </div>
+                    </div>
+
+                    <form action="mailto:alozano7591@conestogac.on.ca" method="POST" enctype="text/plain" 
+                    class="formGridMain" id="formGridMain">
+                        <div class="formContainer">
+    
+                            <div class="frmName"> 
+                                <input type="text" id="uname" name="uname" placeholder="Name" required minlength="8" pattern="[a-zA-Z0-9]+\s[a-zA-Z0-9]+">
+                            </div>
+                            <div class="frmEmail">
+                                <input type="email" id="uemail" name="uemail" placeholder="Email" required minlength="3" pattern="[/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/]">
+                            </div>
+                            
+                            <div class="frmMessage">
+                                <textarea name="umessage" id="umessage"  rows="8" required minlength="3" placeholder="Message"></textarea>
+                            </div>
+                
+                            <div class="fieldSubmit">
+                                <input class="frmSubButton" type="submit" value="Send Message">
+                                <input class="frmClearButton" type="reset" value="Clear Form">
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                </form>
             </section>
         </section>
     </main>
@@ -210,5 +320,27 @@
             <p>Portfolio maintained by Alfredo Lozano</p>
         </div>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 </html>
