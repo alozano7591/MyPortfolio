@@ -711,6 +711,15 @@ footer{
 
     /*** INTRO IMAGE START ****/
 
+    .introSect img{
+        object-position:center bottom ;
+    }
+
+    .introTextContainer{ 
+        background-color: rgba(25, 25, 30, 0.83);    /* darken the image to make text easier to read */
+    }
+    
+
     .introtext{    
         width: 100%;
         height: 80%;
