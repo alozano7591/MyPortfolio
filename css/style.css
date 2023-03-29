@@ -352,7 +352,7 @@ img {vertical-align: middle;}
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
-        'skillLang skillSoftware';
+        'skillLang skillHL skillSoftware';
 
     margin: 0 auto;
 
@@ -439,15 +439,16 @@ iframe{
 
 .projectItem{
     text-align: center;
-    padding: 45px 0;
+    margin: 40px 0px;
+
+    border: 1px black solid;
+    box-shadow: 5px 8px 5px #888888;
+    background-color: white;
+    padding: 25px 25px;
 }
 
-/***** Unity Game Secntion *******/
-
-
-
-.projectItem{
-    text-align: center;
+.projectItem h3{
+    padding-bottom: 25px;
 }
 
 .projectItem img{
@@ -467,7 +468,7 @@ iframe{
 
 
 
-/***** END Unity Game Section **********/
+/***** END Project Section **********/
 
 /************** CONTACT SECTION ************/
 
@@ -744,6 +745,7 @@ footer{
         display: grid;
         grid-gap: 30px;
         grid-template-areas:
+            'skillHL'    
             'skillLang'
             'skillSoftware';
 
