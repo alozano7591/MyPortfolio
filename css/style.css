@@ -776,10 +776,16 @@ footer{
 
     /******** End of Slideshow ********/
 
+    .projectItem{
+        margin: 40px 0px;
+        padding: 25px 25px;
+    }
+
     .projectItemDetails{
         margin: auto;
         text-align: justify;
         width: 100%;
+        
     }
 
     /****** Rocket area ******/
