@@ -81,7 +81,8 @@ function countDown()
         document.getElementById("countDownText").textContent = "BLAST OFF";
     
         clearInterval(flyID);                                   //clear interval just in case
-        flyID = setInterval(flyRocket, countDownTotal);         //start interval of flying at 10ms intervals
+
+        flyID = setInterval(flyRocket, 10);
 
         clearInterval(launchCountDown);
     }
@@ -96,14 +97,14 @@ function countDown()
 function flyRocket()
 {
 
-    if(posY == 50){
+    if(posY <= 50){
         rocketElem.style.visibility = "hidden";
         clearInterval(flyID)
         formElem.style.display = 'block';
         rocketSectElem.style.display = 'none';
     }
 
-    posY--;
+    posY-= 6;
     
     rocketElem.style.top = posY.toString() + 'px';
 
