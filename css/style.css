@@ -345,16 +345,20 @@ img {vertical-align: middle;}
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    justify-content: center;
+    align-content: center;
     */
 
+    margin: 0 auto;
+    
     text-align: center;
+
     width: 100%;
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 10px;
     grid-template-areas:
         'skillLang skillHL skillSoftware';
-
-    margin: 0 auto;
 
     border: 1px black solid;
     box-shadow: 5px 8px 5px #888888;
@@ -369,6 +373,10 @@ img {vertical-align: middle;}
 .skillListSect ul{
     padding-left: 0;
     list-style: none;
+}
+
+.skillListSect ul li{
+    padding: 5px 0 5px 0;
 }
 
 .skillLangList{
@@ -387,9 +395,7 @@ img {vertical-align: middle;}
 }
 
 
-.skillListSect ul li{
-    padding: 5px 0 5px 0;
-}
+
 /********* END OF SKILL SECT **********/
 
 .prog1815-Ass3, .webRocketProject{
