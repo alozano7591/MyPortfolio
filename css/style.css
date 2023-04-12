@@ -396,11 +396,6 @@ img {vertical-align: middle;}
 
 
 /********* END OF SKILL SECT **********/
-/*
-.prog1815-Ass3, .webRocketProject{
-    padding: 18px 0 18px 0;
-}
-*/
 
 
 /********* Work SECT **************/
@@ -471,10 +466,16 @@ iframe{
 .projectItemDetails h3{
     padding: 25px 0 25px 0;
     font-weight: bold;
+    text-align: center;
 }
 
 .projectItemDetails p{
     padding: 0;
+}
+
+.projectItemDetails ul{
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .projectItemDetails li{
@@ -482,43 +483,22 @@ iframe{
     list-style: none;
 }
 
-.projectItemDetails ul{
-    padding-bottom: 20px;
-}
+
 
 .demoButton{
     
     text-decoration: none;
-
-    /*
-    color: white; 
-    transition-duration: 0.4s;
-	display: inline-block; 
-	width: 250px; 
-	font-size: 20px; 
-    font-weight: bold;
-	border: 5px solid white; 
-	text-decoration: none;
-	padding: 20px 70px; 
-
-    text-align: center;
-*/
 
     font-size: 35px;
     transition-duration: 0.4s;
     background-color: #008CBA;
     color: white;
     cursor: pointer;
-    /*border: 2px solid black;*/
     border-radius: 16px;
     padding: 10px 30px;
 }
 
 .demoButton:hover{
-    /*
-    background-color: white;
-    color: black;
-    */
 
     background-color: white; 
     color: black; 
@@ -862,6 +842,10 @@ footer{
         width: 100%;
         
     }
+
+    .projectItemDetails ul{
+        text-align: left;
+    }
     
     .projectItem iframe{
         width: 100%;
@@ -870,6 +854,10 @@ footer{
 
     .videoWrapper{
         height: 350px;
+    }
+
+    .demoButton{
+        font-size: 30px;
     }
 
     /****** Rocket area ******/
