@@ -397,21 +397,11 @@ img {vertical-align: middle;}
 
 
 /********* END OF SKILL SECT **********/
-
+/*
 .prog1815-Ass3, .webRocketProject{
     padding: 18px 0 18px 0;
 }
-
-.videoWrapper{
-    position: relative;
-    padding: 0 0 56.25% 0;
-}
-
-iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+*/
 
 
 /********* Work SECT **************/
@@ -428,6 +418,19 @@ iframe{
 
 .workSect h2{
     border-bottom: 1px white solid;
+}
+
+
+.videoWrapper{
+    position: relative;
+    padding: 0px 0px 56.25% 0px;
+}
+
+
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /***** LegalLab Section **********/
@@ -464,6 +467,24 @@ iframe{
 .projectItem iframe{
     width: 100%;
     height: 100%;
+}
+
+.projectItemDetails h3{
+    padding: 25px 0 25px 0;
+    font-weight: bold;
+}
+
+.projectItemDetails p{
+    padding: 0;
+}
+
+.projectItemDetails li{
+    padding: 4px;
+    list-style: none;
+}
+
+.projectItemDetails ul{
+    padding-bottom: 20px;
 }
 
 .demoButton{
@@ -705,6 +726,11 @@ footer{
 
     .formGridMain{
         width: 100%;
+    }
+
+    .projectItemDetails li{
+        padding: 4px;
+        list-style: square;
     }
 }
 
