@@ -84,14 +84,14 @@ nav>ul>li{
 
 /* Used for drop down menus */
 nav ul li ul{
-    width: 150px;
+    width: 100%;
     position: absolute;
+    top: 70px;
     z-index: 999;
     text-align: left;
-    background-color: rgb(65, 65, 65);
-    border: rgb(0, 0, 0);
-    box-shadow: 0 10px 10px rgb(206, 0, 0);
+    background-color: rgb(44, 44, 44);
 }
+
 
 nav ul li ul li a{
     color: white;
@@ -100,8 +100,7 @@ nav ul li ul li a{
 }
 
 nav ul li ul li:hover a:hover{
-    color: red;
-    background-color: rgb(250, 237, 212);
+    background-color: rgb(60, 60, 60);
 } 
 
 nav ul li ul{
@@ -771,6 +770,11 @@ footer{
     nav>ul>li{
         display: inline-block;
         position: relative;
+    }
+
+    nav ul li ul{
+        width: 150px;
+        top: 54px;
     }
 
     /**** END of main nav menu */
